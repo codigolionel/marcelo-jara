@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         <div className="border-t border-navy-foreground/5 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-navy-foreground/30">
           <p>© {new Date().getFullYear()} Marcelo Jara — Asesor de Seguros. Matrícula Profesional MP 84996. Acompañamiento responsable para personas y empresas.</p>
-          <a href="/privacidad" className="hover:text-gold transition-colors">
+          <a href="/politica-privacidad.html" className="hover:text-gold transition-colors">
             Política de Privacidad
           </a>
         </div>
