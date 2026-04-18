@@ -50,7 +50,7 @@ const ProcessSection = () => {
             </p>
             <a
               href="#contacto"
-              className="inline-flex items-center justify-center gap-2 bg-whatsapp text-whatsapp-foreground px-6 py-2.5 rounded-full text-sm font-bold tracking-wide hover:shadow-[0_8px_30px_rgb(37,211,102,0.3)] hover:-translate-y-1 transition-all duration-300"
+              className="inline-flex items-center justify-center gap-2 bg-whatsapp text-whatsapp-foreground px-6 py-2.5 rounded-full text-base md:text-sm font-bold tracking-wide hover:shadow-[0_8px_30px_rgb(37,211,102,0.3)] hover:-translate-y-1 transition-all duration-300"
             >
               Comenzar
             </a>
@@ -74,10 +74,10 @@ const ProcessSection = () => {
                 </div>
                 <div className="pb-8">
                   <div className="flex items-baseline gap-3 mb-2">
-                    <span className="text-gold text-xs font-semibold tracking-widest">0{i + 1}</span>
+                    <span className="text-gold text-base md:text-xs font-semibold tracking-widest">0{i + 1}</span>
                     <h3 className="text-xl font-heading text-white">{s.title}</h3>
                   </div>
-                  <p className="text-white/70 text-[15px] leading-relaxed">{s.description}</p>
+                  <p className="text-white/70 text-base md:text-[15px] leading-relaxed">{s.description}</p>
                 </div>
               </motion.div>
             ))}

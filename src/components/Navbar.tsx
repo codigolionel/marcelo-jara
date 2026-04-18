@@ -5,7 +5,7 @@ const links = [
   { href: "#inicio", label: "Inicio" },
   { href: "#servicios", label: "Servicios" },
   { href: "#sobre-mi", label: "Sobre Mí" },
-  { href: "#testimonios", label: "Testimonios" },
+  // { href: "#testimonios", label: "Testimonios" },
   { href: "#contacto", label: "Contacto" },
 ];
 
@@ -30,7 +30,7 @@ const Navbar = () => {
           <img 
             src="/logo-marcelo.png" 
             alt="Marcelo Jara" 
-            className="h-8 md:h-9 w-auto object-contain border-0 outline-none"
+            className="h-11 md:h-9 w-auto object-contain border-0 outline-none"
           />
         </a>
 
@@ -51,14 +51,14 @@ const Navbar = () => {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-accent text-white px-5 py-2 rounded-full text-xs font-bold tracking-wide transition-all duration-300"
+            className="inline-flex items-center justify-center gap-2 bg-accent text-white px-5 py-2 rounded-full text-base lg:text-xs font-bold tracking-wide transition-all duration-300"
           >
             Consultar
           </a>
         </div>
 
         <button onClick={() => setOpen(!open)} className={`lg:hidden text-navy`}>
-          {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {open ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
         </button>
       </div>
 
@@ -75,12 +75,12 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex w-fit mx-auto items-center justify-center gap-2 bg-[#1B2A5E] text-white px-8 py-3.5 rounded-full text-sm font-bold shadow-lg shadow-navy/10 active:scale-95 transition-all duration-300">
+          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex w-fit mx-auto items-center justify-center gap-2 bg-[#1B2A5E] text-white px-8 py-3.5 rounded-full text-base lg:text-sm font-bold shadow-lg shadow-navy/10 active:scale-95 transition-all duration-300">
             Consultar por WhatsApp
           </a>
 
           <div className="mt-auto pt-12 text-center border-t border-border/40 px-4">
-            <p className="text-[10px] text-navy/30 uppercase tracking-[0.2em] leading-relaxed font-semibold">
+            <p className="text-base lg:text-[10px] text-navy/30 uppercase tracking-[0.2em] leading-relaxed font-semibold">
               Marcelo Jara — Asesor de Seguros<br />
               <span className="text-[#C0392B]/60 font-bold">Matrícula Profesional MP 84996</span><br />
               Acompañamiento responsable para personas y empresas

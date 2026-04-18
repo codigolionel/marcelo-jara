@@ -34,8 +34,8 @@ const HeroSection = () => {
           {/* Red divider */}
           <div className="w-12 h-[3px] bg-[#C0392B] rounded-full mb-4" />
           
-          <p className="text-white/80 text-[13px] sm:text-sm lg:text-[15px] xl:text-[15px] leading-relaxed font-body mb-5 max-w-[90%] lg:max-w-none">
-            Detrás de cada póliza hay una historia, una familia y un proyecto de vida. Mi trabajo es acompañarte a proteger ese camino.
+          <p className="text-white/80 text-base md:text-[15px] xl:text-[15px] leading-relaxed font-body mb-5 max-w-[90%] lg:max-w-none">
+            Hace 10 años que acompaño familias y empresas en Salta. No vendo pólizas — ayudo a tomar decisiones que protegen lo que más importa.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4">
@@ -43,7 +43,7 @@ const HeroSection = () => {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex w-fit items-center justify-center bg-whatsapp text-white px-7 py-2.5 rounded-full text-sm md:text-[15px] font-semibold tracking-wide hover:shadow-[0_10px_40px_rgb(37,211,102,0.4)] hover:-translate-y-1 transition-all duration-300"
+              className="inline-flex w-fit items-center justify-center bg-whatsapp text-white px-7 py-2.5 rounded-full text-base md:text-[15px] font-semibold tracking-wide hover:shadow-[0_10px_40px_rgb(37,211,102,0.4)] hover:-translate-y-1 transition-all duration-300"
             >
               Consultar por WhatsApp
             </a>

@@ -22,7 +22,7 @@ const Index = () => {
       <AboutSection />
       <BenefitsSection />
       <ProcessSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <CtaBanner />
       <FaqSection />
       <ContactSection />

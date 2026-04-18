@@ -68,15 +68,15 @@ const TestimonialsSection = () => {
                 ))}
               </div>
 
-              <p className="text-foreground/70 leading-relaxed mb-8 text-[15px]">"{t.text}"</p>
+              <p className="text-foreground/70 leading-relaxed mb-8 text-base md:text-[15px]">"{t.text}"</p>
 
               <div className="flex items-center gap-3 pt-6 border-t border-border">
-                <div className="w-10 h-10 rounded-full bg-navy flex items-center justify-center text-navy-foreground text-sm font-bold">
+                <div className="w-10 h-10 rounded-full bg-navy flex items-center justify-center text-navy-foreground text-base md:text-sm font-bold">
                   {t.initials}
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground text-sm">{t.name}</p>
-                  <p className="text-xs text-muted-foreground">{t.role}</p>
+                  <p className="font-semibold text-foreground text-base md:text-sm">{t.name}</p>
+                  <p className="text-base md:text-xs text-muted-foreground">{t.role}</p>
                 </div>
               </div>
             </motion.div>

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ShieldCheck, Landmark, Handshake } from "lucide-react";
+import { ShieldCheck, Landmark, Handshake, ArrowUpRight } from "lucide-react";
 import service01 from "@/assets/service-01.jpg";
 import service02 from "@/assets/service-02.jpg";
 import service03 from "@/assets/service-03.jpg";
@@ -7,21 +7,21 @@ import service03 from "@/assets/service-03.jpg";
 const benefits = [
   { 
     icon: ShieldCheck, 
-    title: "Tu Vehículo", 
+    title: "Tu Auto", 
     image: service01,
-    description: "Coberturas de terceros, todo riesgo y asistencia en ruta. Para que manejes con la certeza de que estoy ahí si algo pasa." 
+    description: "Terceros, todo riesgo o franquicia. Te explico la diferencia real y te ayudo a elegir sin pagar de más." 
   },
   { 
     icon: Landmark, 
-    title: "Tu Hogar", 
+    title: "Tu Casa", 
     image: service02,
-    description: "Protección integral contra incendio, robo, daños por agua y asistencia 24 hs. Porque tu casa es el lugar donde todo importa." 
+    description: "Incendio, robo, daños por agua, asistencia 24 hs. Tu hogar protegido para que puedas dormir tranquilo." 
   },
   { 
     icon: Handshake, 
-    title: "Tu Empresa (ART)", 
+    title: "Tu Empresa", 
     image: service03,
-    description: "Gestión estratégica de Riesgos del Trabajo: optimización de costos, mejora en prestaciones y acompañamiento en cada caso." 
+    description: "ART sin vueltas. Optimizamos costos, mejoramos prestaciones y te acompañamos en cada caso." 
   },
 ];
 
@@ -37,7 +37,7 @@ const BenefitsSection = () => {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="section-label justify-center mb-4 block"
           >
-            Soluciones integrales
+            Coberturas
           </motion.span>
           <motion.h2 
             initial={{ opacity: 0, x: 50 }}
@@ -46,7 +46,7 @@ const BenefitsSection = () => {
             transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="editorial-heading text-foreground"
           >
-            Cada cobertura, <em>pensada para tu realidad</em>
+            Para cada cosa que importa, <em>hay una solución.</em>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, x: 50 }}
@@ -63,31 +63,36 @@ const BenefitsSection = () => {
           {benefits.map((b, i) => (
             <motion.div
               key={b.title}
-              initial={{ opacity: 0, x: i % 2 === 0 ? -100 : 100, y: 0 }}
-              whileInView={{ opacity: 1, x: 0, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              initial={{ opacity: 0, y: 30, scale: 0.97 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: true, margin: "-60px" }}
               transition={{ 
-                duration: 0.8, 
-                delay: i * 0.1, 
-                ease: [0.16, 1, 0.3, 1] 
+                duration: 0.4, 
+                delay: i * 0.08, 
+                ease: [0.25, 0.46, 0.45, 0.94] 
               }}
-              className="group text-center bg-card rounded-2xl border border-border/80 shadow-md hover:shadow-lg transition-all duration-500 overflow-hidden"
+              className="group relative bg-white rounded-2xl p-8 lg:p-10 border border-[#E0E0E0] shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer"
             >
-              <div className="relative h-[200px] overflow-hidden">
-                <img 
-                  src={b.image} 
-                  alt={b.title} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-navy/10 group-hover:bg-transparent transition-colors duration-500" />
-              </div>
-              
-              <div className="p-6 md:p-8">
-                <div className="w-16 h-16 rounded-2xl bg-navy/5 flex items-center justify-center mx-auto mb-5 group-hover:bg-gold/10 group-hover:scale-105 transition-all duration-300">
-                  <b.icon className="w-7 h-7 text-navy group-hover:text-gold transition-colors duration-300" />
+              {/* Hover gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#1B2A5E] to-[#C0392B] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl" />
+
+              {/* Card content */}
+              <div className="relative z-10">
+                {/* Icon */}
+                <div className="w-14 h-14 rounded-2xl bg-[#1B2A5E]/5 group-hover:bg-white/15 flex items-center justify-center mb-6 transition-colors duration-300">
+                  <b.icon className="w-6 h-6 text-[#1B2A5E] group-hover:text-white transition-colors duration-300" />
                 </div>
-                <h3 className="text-xl font-heading text-foreground mb-3">{b.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed max-w-[280px] mx-auto">{b.description}</p>
+
+                {/* Title */}
+                <h3 className="text-xl lg:text-2xl font-heading font-bold text-[#1B2A5E] group-hover:text-white mb-3 transition-colors duration-300">
+                  {b.title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-[#666] group-hover:text-white/85 leading-relaxed mb-8 text-base md:text-[15px] transition-colors duration-300">
+                  {b.description}
+                </p>
+
               </div>
             </motion.div>
           ))}

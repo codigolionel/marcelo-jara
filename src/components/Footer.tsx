@@ -13,16 +13,16 @@ const Footer = () => {
               className="h-6 w-auto object-contain border-0 outline-none opacity-80"
             />
           </a>
-          <div className="flex flex-wrap justify-center gap-8 text-xs text-navy-foreground/40 uppercase tracking-wider">
-            <a href="#servicios" className="hover:text-navy-foreground/80 transition-colors">Seguros de Vida</a>
+          <div className="flex flex-wrap justify-center gap-8 text-base md:text-xs text-navy-foreground/40 uppercase tracking-wider">
+            <a href="#servicios" className="hover:text-navy-foreground/80 transition-colors">Vida y Familia</a>
             <a href="#servicios" className="hover:text-navy-foreground/80 transition-colors">Ahorro y Retiro</a>
             <a href="#beneficios" className="hover:text-navy-foreground/80 transition-colors">Automotor</a>
             <a href="#beneficios" className="hover:text-navy-foreground/80 transition-colors">Hogar</a>
             <a href="#beneficios" className="hover:text-navy-foreground/80 transition-colors">ART</a>
           </div>
         </div>
-        <div className="border-t border-navy-foreground/5 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-navy-foreground/30">
-          <p>© {new Date().getFullYear()} Marcelo Jara — Asesor de Seguros. Matrícula Profesional MP 84996. Acompañamiento responsable para personas y empresas.</p>
+        <div className="border-t border-navy-foreground/5 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-base md:text-xs text-navy-foreground/30">
+          <p>© {new Date().getFullYear()} Marcelo Jara — Asesor de Seguros. Salta, Argentina. MP 84996.</p>
           <a href="/politica-privacidad.html" className="hover:text-gold transition-colors">
             Política de Privacidad
           </a>
