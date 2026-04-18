@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 6%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 6%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 6%;
+
+    --primary: 227 55% 24%; /* Navy #1B2A5E */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 96%; /* Alt background #F5F5F5 */
+    --secondary-foreground: 0 0% 6%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 5 61% 46%; /* Red #C0392B */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 227 55% 24%;
+
+    --radius: 0.5rem;
+
+    --whatsapp: 142 70% 40%;
+    --whatsapp-foreground: 0 0% 100%;
+
+    --navy: 227 55% 24%;
+    --navy-foreground: 0 0% 100%;
+
+    --gold: 5 61% 46%; /* Mapped gracefully to Red */
+    --gold-dark: 5 61% 36%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    font-size: 16px;
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      font-size: 18px;
+    }
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  *:not(img):not(svg):not(video) {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  img, svg, video {
+    border: 0 !important;
+    outline: none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  ::selection {
+    background: hsl(38 65% 55% / 0.3);
+  }
+}
+
+@layer components {
+  .section-label {
+    @apply inline-flex items-center gap-2 text-xs font-body font-semibold tracking-[0.25em] uppercase;
+    color: hsl(var(--gold));
+  }
+
+  .section-label::before {
+    content: "";
+    @apply w-8 h-px;
+    background: hsl(var(--gold));
+  }
+
+  .editorial-heading {
+    @apply font-heading text-4xl md:text-5xl lg:text-[4.5rem] leading-[1.05] tracking-tight;
+  }
+
+  .editorial-heading em {
+    @apply italic font-normal text-navy relative inline-block;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .grain {
+    position: relative;
+  }
+
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+}
