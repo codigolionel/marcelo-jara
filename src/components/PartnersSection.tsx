@@ -19,7 +19,7 @@ const PartnersSection = () => {
   return (
     <section 
       id="partners" 
-      className="py-24 px-6 overflow-hidden relative"
+      className="pt-10 pb-24 px-6 overflow-hidden relative"
     >
       {/* Skewed Background */}
       <div className="absolute inset-0 bg-[#f7f7f8] -skew-y-2 origin-left -z-10" />

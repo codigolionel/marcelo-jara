@@ -12,8 +12,8 @@ const ContactSection = () => {
   };
 
   const contactInfo = [
-    { icon: MapPin, label: "Ubicación", value: "Buenos Aires, Argentina" },
-    { icon: Phone, label: "Teléfono", value: "+54 9 11 1234-5678" },
+    { icon: MapPin, label: "Ubicación", value: "Salta, Argentina" },
+    { icon: Phone, label: "Teléfono", value: "+54 9 387 504-3079" },
     { icon: Mail, label: "Email", value: "marcelo@jaraseguros.com.ar" },
     { icon: Clock, label: "Horario", value: "Lun a Vie, 9:00 a 18:00" },
   ];
@@ -48,7 +48,7 @@ const ContactSection = () => {
               Escribime cuando quieras<span className="text-gold">.</span>
             </motion.h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-10">
-              Respondo personalmente. Sin formularios que van a ningún lado, sin vendedores intermedios.
+              Escribime cuando quieras. WhatsApp te llega a mi celular y te contesto en el día. El formulario me llega por mail, así que tardo un poco más.
             </p>
 
             <div className="space-y-5 mb-8">
@@ -133,14 +133,8 @@ const ContactSection = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-center bg-card rounded-2xl p-6 border border-border shadow-sm flex flex-col items-center justify-center sm:flex-row sm:justify-between py-6 px-8"
             >
-              <p className="text-base md:text-xs font-semibold text-foreground/70 uppercase tracking-wider mb-4 sm:mb-0">Síguenos en nuestras redes</p>
+              <p className="text-base md:text-xs font-semibold text-foreground/70 uppercase tracking-wider mb-4 sm:mb-0">Seguime en mis redes</p>
               <div className="flex items-center justify-center gap-4">
-                <a href="#" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-md bg-navy/5 flex items-center justify-center text-navy hover:text-gold hover:bg-navy/10 transition-all hover:-translate-y-1">
-                  <Facebook className="w-5 h-5" />
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-md bg-navy/5 flex items-center justify-center text-navy hover:text-gold hover:bg-navy/10 transition-all hover:-translate-y-1">
-                  <Instagram className="w-5 h-5" />
-                </a>
               </div>
             </motion.div>
           </div>

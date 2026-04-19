@@ -42,7 +42,7 @@ const AboutSection = () => {
 
             {/* Main paragraph */}
             <p className="text-base md:text-[15px] text-[#1B2A5E]/70 leading-relaxed mb-8">
-              Me llamo Marcelo y llevo 10 años en esto. Aprendí que los seguros no son un trámite — son una conversación sobre lo que querés proteger. Por eso me tomo el tiempo de entender tu situación antes de recomendarte cualquier cobertura.
+              Me llamo Marcelo Jara y trabajo como productor asesor en Salta desde 2016. En la primera charla te pregunto cuatro cosas: qué tenés hoy, qué querés cubrir, quién depende de vos, y qué presupuesto manejás. Con esas respuestas armo dos o tres comparativas entre aseguradoras y te las paso por WhatsApp esa misma semana.
             </p>
 
             {/* Checkmarks grid */}

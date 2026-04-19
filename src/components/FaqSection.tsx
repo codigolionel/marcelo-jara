@@ -8,20 +8,24 @@ import {
 
 const faqs = [
   {
-    question: "¿Cómo sé qué cobertura necesito?",
-    answer: "En una primera consulta sin compromiso, analizamos tu situación personal o empresarial para identificar las coberturas que realmente necesitás. Te explico cada opción con claridad para que tomes la mejor decisión.",
+    question: "¿Cuánto cuesta un seguro de vida?",
+    answer: "Depende de la edad, el capital asegurado y la duración. En 10 minutos te armo una comparativa real entre las aseguradoras con las que trabajo.",
   },
   {
-    question: "¿Ofrecen comparación entre aseguradoras?",
-    answer: "Sí, trabajo con múltiples compañías del mercado para ofrecerte las mejores opciones en precio y cobertura. Mi objetivo es que elijas con toda la información disponible.",
+    question: "¿Cuál es la diferencia entre todo riesgo y terceros completo?",
+    answer: "Terceros completo cubre daños a otros más granizo, cristales, robo e incendio de tu auto. Todo riesgo suma los daños propios — si chocás vos, también te cubre. Te ayudo a elegir según el valor del auto y tu presupuesto.",
   },
   {
-    question: "¿Cómo se gestiona un siniestro?",
-    answer: "Te acompaño en todo el proceso de gestión del siniestro. Desde la denuncia inicial hasta la resolución, estoy disponible para orientarte y asegurar que recibas la prestación que te corresponde.",
+    question: "¿Qué pasa si dejo de pagar una cuota?",
+    answer: "La mayoría de las aseguradoras dan 30 días de gracia antes de suspender la cobertura. Avisame y vemos cómo regularizarlo sin perder la póliza.",
   },
   {
-    question: "¿Están mis datos personales protegidos?",
-    answer: "Absolutamente. Toda la información que compartís conmigo es tratada con total confidencialidad y bajo las normativas de protección de datos vigentes.",
+    question: "¿Cómo denuncio un siniestro? ¿Te llamo a vos o a la aseguradora?",
+    answer: "A mí primero. Me escribís por WhatsApp, me contás qué pasó, y yo hago la denuncia y sigo el caso con la aseguradora hasta que te resuelvan.",
+  },
+  {
+    question: "¿Cobrás comisión del cliente? ¿Por qué me conviene vs contratar directo?",
+    answer: "No te cobro nada. La comisión la paga la aseguradora. La diferencia es que si contratás directo, en un siniestro estás solo. Conmigo tenés a alguien que conoce el sistema y te acompaña.",
   },
 ];
 

@@ -24,18 +24,18 @@ const HeroSection = () => {
            className="max-w-xl mx-auto lg:mx-0 w-full flex flex-col items-center lg:items-start text-center lg:text-left"
         >
           <span className="inline-block px-3 py-1 rounded-full bg-white/10 text-white text-[9px] md:text-[10px] font-bold tracking-widest uppercase mb-6 border border-white/20 relative z-10 shadow-sm lg:mt-0">
-            Asesor de Seguros
+            PRODUCTOR ASESOR · MP 84996 · SALTA
           </span>
           
-          <h1 className="font-heading text-[2.5rem] sm:text-4xl md:text-5xl lg:text-[48px] xl:text-[56px] text-white font-bold leading-[1.1] tracking-tight mb-4 transform translate-y-[5px]">
-            Cuidar lo que construiste, proyectar lo que soñás.
+          <h1 className="font-heading text-[2.25rem] sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[46px] text-white font-bold leading-[1.15] tracking-tight mb-4 transform translate-y-[5px]">
+            Vida, retiro, ahorro, auto, hogar y ART para familias y empresas.
           </h1>
 
           {/* Red divider */}
           <div className="w-12 h-[3px] bg-[#C0392B] rounded-full mb-4" />
           
           <p className="text-white/80 text-base md:text-[15px] xl:text-[15px] leading-relaxed font-body mb-5 max-w-[90%] lg:max-w-none">
-            Hace 10 años que acompaño familias y empresas en Salta. No vendo pólizas — ayudo a tomar decisiones que protegen lo que más importa.
+            Hace diez años trabajo como productor de seguros en Salta. Comparo cotizaciones entre seis aseguradoras y me ocupo del trámite completo si tenés un siniestro. Escribime por WhatsApp y te contesto en el día.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4">

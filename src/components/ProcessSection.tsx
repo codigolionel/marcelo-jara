@@ -41,12 +41,12 @@ const ProcessSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-12 gap-16">
           <div className="lg:col-span-4">
-            <span className="section-label mb-4 block text-white/60">¿Por qué Marcelo Jara?</span>
+            <span className="section-label mb-4 block text-white/60">Por qué conviene un productor</span>
             <h2 className="editorial-heading text-white mb-6">
               Presencia y claridad en cada <em className="text-white">decisión</em>
             </h2>
             <p className="text-white/70 leading-relaxed mb-8">
-              Mi enfoque es simple: acompaño a personas y empresas brindando herramientas de decisión para seleccionar la protección apropiada. Me involucro personalmente en cada proyecto, asegurando un trato humano y una respuesta responsable desde el primer contacto.
+              Comparo precios entre las 6 aseguradoras con las que trabajo. La comisión la paga la aseguradora, así que a vos no te sale un peso extra. Si tenés un siniestro, me escribís por WhatsApp y me ocupo del trámite: hago la denuncia y sigo el caso con la compañía hasta que te paguen. Cada vez que cambia algo grande en tu vida (te casás, nace un hijo, comprás un auto, abrís un negocio), revisamos la cobertura juntos y la actualizamos.
             </p>
             <a
               href="#contacto"

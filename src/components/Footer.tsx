@@ -16,9 +16,9 @@ const Footer = () => {
           <div className="flex flex-wrap justify-center gap-8 text-base md:text-xs text-navy-foreground/40 uppercase tracking-wider">
             <a href="#servicios" className="hover:text-navy-foreground/80 transition-colors">Vida y Familia</a>
             <a href="#servicios" className="hover:text-navy-foreground/80 transition-colors">Ahorro y Retiro</a>
-            <a href="#beneficios" className="hover:text-navy-foreground/80 transition-colors">Automotor</a>
-            <a href="#beneficios" className="hover:text-navy-foreground/80 transition-colors">Hogar</a>
-            <a href="#beneficios" className="hover:text-navy-foreground/80 transition-colors">ART</a>
+            <a href="#servicios" className="hover:text-navy-foreground/80 transition-colors">Automotor</a>
+            <a href="#servicios" className="hover:text-navy-foreground/80 transition-colors">Hogar</a>
+            <a href="#servicios" className="hover:text-navy-foreground/80 transition-colors">ART</a>
           </div>
         </div>
         <div className="border-t border-navy-foreground/5 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-base md:text-xs text-navy-foreground/30">
