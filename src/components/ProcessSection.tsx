@@ -31,7 +31,7 @@ const ProcessSection = () => {
   return (
     <section id="proceso" className="py-24 lg:py-32 relative overflow-hidden isolate">
       {/* Background Image with Dark Overlay */}
-      <div 
+      <div
         className="absolute inset-0 -z-20 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${bgImage})` }}
       >
@@ -42,11 +42,11 @@ const ProcessSection = () => {
         <div className="grid lg:grid-cols-12 gap-16">
           <div className="lg:col-span-4">
             <span className="section-label mb-4 block text-white/60">Por qué conviene un productor</span>
-            <h2 className="editorial-heading text-white mb-6">
-              Presencia y claridad en cada <em className="text-white">decisión</em>
+            <h2 className="editorial-heading text-[2.5rem] leading-[1.1] md:text-5xl lg:-tracking-tight text-white mb-6">
+              Presencia y claridad en cada decisión
             </h2>
             <p className="text-white/70 leading-relaxed mb-8">
-              Comparo precios entre las 6 aseguradoras con las que trabajo. La comisión la paga la aseguradora, así que a vos no te sale un peso extra. Si tenés un siniestro, me escribís por WhatsApp y me ocupo del trámite: hago la denuncia y sigo el caso con la compañía hasta que te paguen. Cada vez que cambia algo grande en tu vida (te casás, nace un hijo, comprás un auto, abrís un negocio), revisamos la cobertura juntos y la actualizamos.
+              Comparo precios entre 6 aseguradoras. La comisión la paga la compañía, sin costo para vos. Si tenés un siniestro, me escribís y gestiono todo el trámite hasta el pago. Además, revisamos y actualizamos tu cobertura cuando cambia tu situación.
             </p>
             <a
               href="#contacto"

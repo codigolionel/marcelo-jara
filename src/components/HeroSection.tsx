@@ -18,26 +18,26 @@ const HeroSection = () => {
           style={{ opacity: 1 }}
         />
         <motion.div
-           initial={{ opacity: 0, y: 20 }}
-           animate={{ opacity: 1, y: 0 }}
-           transition={{ duration: 0.8, ease: "easeInOut" }}
-           className="max-w-xl mx-auto lg:mx-0 w-full flex flex-col items-center lg:items-start text-center lg:text-left"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          className="max-w-xl mx-auto lg:mx-0 w-full flex flex-col items-center lg:items-start text-center lg:text-left"
         >
           <span className="inline-block px-3 py-1 rounded-full bg-white/10 text-white text-[9px] md:text-[10px] font-bold tracking-widest uppercase mb-6 border border-white/20 relative z-10 shadow-sm lg:mt-0">
             PRODUCTOR ASESOR · MP 84996 · SALTA
           </span>
-          
+
           <h1 className="font-heading text-[2.25rem] sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[46px] text-white font-bold leading-[1.15] tracking-tight mb-4 transform translate-y-[5px]">
-            Vida, retiro, ahorro, auto, hogar y ART para familias y empresas.
+            Protegé lo que más importa, Tu seguro claro y al mejor precio.
           </h1>
 
           {/* Red divider */}
           <div className="w-12 h-[3px] bg-[#C0392B] rounded-full mb-4" />
-          
+
           <p className="text-white/80 text-base md:text-[15px] xl:text-[15px] leading-relaxed font-body mb-5 max-w-[90%] lg:max-w-none">
             Hace diez años trabajo como productor de seguros en Salta. Comparo cotizaciones entre seis aseguradoras y me ocupo del trámite completo si tenés un siniestro. Escribime por WhatsApp y te contesto en el día.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4">
             <a
               href={WHATSAPP_URL}
@@ -53,13 +53,13 @@ const HeroSection = () => {
 
       {/* Right Column */}
       <div className="w-full lg:w-1/2 h-[50vh] lg:h-full relative overflow-hidden">
-        <motion.img 
+        <motion.img
           initial={{ opacity: 0, scale: 1.05 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          src={heroImage} 
-          alt="Familia feliz" 
-          className="absolute inset-0 w-full h-full object-cover" 
+          src={heroImage}
+          alt="Familia feliz"
+          className="absolute inset-0 w-full h-full object-cover"
         />
       </div>
     </section>

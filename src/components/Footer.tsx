@@ -1,16 +1,16 @@
 const Footer = () => {
   return (
-    <footer 
+    <footer
       className="bg-gradient-to-b from-[#1B2A5E] to-[#0F1C3F] pt-24 pb-12 border-t border-navy-foreground/5 relative z-20"
       style={{ clipPath: 'polygon(0 40px, 100% 0, 100% 100%, 0 100%)', marginTop: '-40px' }}
     >
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <a href="#inicio" className="transition-opacity hover:opacity-80 flex items-center">
-            <img 
-              src="/logo-marcelo.png" 
-              alt="Marcelo Jara" 
-              className="h-6 w-auto object-contain border-0 outline-none opacity-80"
+            <img
+              src="/logo-marcelo1.png"
+              alt="Marcelo Jara"
+              className="h-[104px] w-auto object-contain border-0 outline-none opacity-80"
             />
           </a>
           <div className="flex flex-wrap justify-center gap-8 text-base md:text-xs text-navy-foreground/40 uppercase tracking-wider">
