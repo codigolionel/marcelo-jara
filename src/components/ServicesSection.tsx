@@ -10,7 +10,7 @@ const services = [
     title: "Vida y Familia",
     subtitle: "Protección real",
     description: "Si mañana no estás, ¿tu familia puede seguir adelante? Diseñamos coberturas para que la respuesta sea sí.",
-    features: ["Cobertura por fallecimiento", "Invalidez total y parcial", "Enfermedades graves", "Planes flexibles"],
+    features: ["Cobertura por fallecimiento", "Invalidez total y parcial", "Enfermedades graves", "Planes flexibles", "Diagnóstico de cáncer", "Transplantes", "Cuidados intensivos"],
   },
   {
     icon: TrendingUp,
@@ -39,7 +39,7 @@ const ServicesSection = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-10 lg:mb-12">
-          <motion.span 
+          <motion.span
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -48,7 +48,7 @@ const ServicesSection = () => {
           >
             Lo que hacemos
           </motion.span>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -59,7 +59,7 @@ const ServicesSection = () => {
             <br className="max-md:hidden" /> <em>etapa de tu vida</em>
           </motion.h2>
           <p className="text-muted-foreground text-lg leading-relaxed mt-4">
-            Cada situación es distinta. Por eso no trabajo con soluciones genéricas.
+            Cada situación es distinta. Por eso no trabajo con soluciones genéricas. Comparo opciones y te doy la mejor cobertura al mejor precio.
           </p>
         </div>
 
@@ -70,9 +70,9 @@ const ServicesSection = () => {
               initial={{ opacity: 0, y: 30, scale: 0.97 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ 
-                duration: 0.4, 
-                delay: i * 0.08, 
+              transition={{
+                duration: 0.4,
+                delay: i * 0.08,
                 ease: [0.25, 0.46, 0.45, 0.94]
               }}
               className="group relative bg-white rounded-2xl p-8 lg:p-10 border border-[#E0E0E0] shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"

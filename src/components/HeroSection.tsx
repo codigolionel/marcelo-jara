@@ -35,7 +35,7 @@ const HeroSection = () => {
           <div className="w-12 h-[3px] bg-[#C0392B] rounded-full mb-4" />
 
           <p className="text-white/80 text-base md:text-[15px] xl:text-[15px] leading-relaxed font-body mb-5 max-w-[90%] lg:max-w-none">
-            Hace diez años trabajo como productor de seguros en Salta. Comparo cotizaciones entre seis aseguradoras y me ocupo del trámite completo si tenés un siniestro. Escribime por WhatsApp y te contesto en el día.
+            Hace diez años trabajo como productor de seguros en Salta. buscando el mejor costo entre las mejores aseguradoras del mercado garantizando transparencia, acompañamiento y reponsabilidad ante un siniestro Comparo cotizaciones entre seis aseguradoras y me ocupo del trámite completo si tenés un siniestro. Escribime por WhatsApp y te contesto en el día.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4">

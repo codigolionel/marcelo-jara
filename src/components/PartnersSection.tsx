@@ -5,6 +5,16 @@ import omintLogo from "@/assets/omint.jpeg";
 import sancorLogo from "@/assets/sancor-seguros.jpeg";
 import paranaLogo from "@/assets/parana.jpeg";
 import prevencionLogo from "@/assets/prevencion.jpeg";
+import laCajaLogo from "@/assets/la-caja.jpeg";
+import integrityLogo from "@/assets/integrity.jpeg";
+import carusoLogo from "@/assets/caruso.jpeg";
+import beneficioLogo from "@/assets/beneficio.jpeg";
+import bbvaLogo from "@/assets/bbva.jpeg";
+import axaLogo from "@/assets/axa.jpeg";
+import cnpLogo from "@/assets/cnp.jpeg";
+import assistanceLogo from "@/assets/assistance.jpeg";
+import liderarLogo from "@/assets/liderar.jpeg";
+import lifeLogo from "@/assets/life.jpeg";
 
 const partners = [
   { name: "Libra Seguros", src: libraLogo },
@@ -13,6 +23,16 @@ const partners = [
   { name: "Sancor Seguros", src: sancorLogo },
   { name: "Paraná Seguros", src: paranaLogo },
   { name: "Prevención Seguros", src: prevencionLogo },
+  { name: "La Caja", src: laCajaLogo },
+  { name: "Integrity", src: integrityLogo },
+  { name: "Caruso", src: carusoLogo },
+  { name: "Beneficio Seguros", src: beneficioLogo },
+  { name: "BBVA Seguros", src: bbvaLogo },
+  { name: "AXA", src: axaLogo },
+  { name: "CNP Seguros", src: cnpLogo },
+  { name: "Omint Assistance", src: assistanceLogo },
+  { name: "Liderar", src: liderarLogo },
+  { name: "Life Seguros", src: lifeLogo },
 ];
 
 const PartnersSection = () => {
@@ -46,20 +66,25 @@ const PartnersSection = () => {
           las mejores opciones en cobertura y precio.
         </motion.p>
 
-        {/* Grilla de logos */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5 lg:gap-8 items-center justify-items-center">
-          {partners.map((partner) => (
-            <div
-              key={partner.name}
-              className="flex items-center justify-center p-4 rounded-xl bg-white shadow-[0_1px_4px_rgba(0,0,0,0.06)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-all duration-300 w-full max-w-[160px] aspect-video"
-            >
-              <img
-                src={partner.src}
-                alt={partner.name}
-                className="w-[120px] h-[60px] object-contain grayscale opacity-80"
-              />
-            </div>
-          ))}
+        {/* Carrusel infinito de logos */}
+        <div className="relative w-full max-w-[100vw] overflow-hidden py-4 -ml-6 pr-12 w-[calc(100%+3rem)] md:-ml-0 md:pr-0 md:w-full">
+          <div className="absolute top-0 bottom-0 left-0 w-8 md:w-32 bg-gradient-to-r from-[#f7f7f8] to-transparent z-10" />
+          <div className="absolute top-0 bottom-0 right-0 w-8 md:w-32 bg-gradient-to-l from-[#f7f7f8] to-transparent z-10" />
+          
+          <div className="flex w-max animate-marquee space-x-4 md:space-x-8 pl-4 lg:pl-0">
+            {[...partners, ...partners].map((partner, index) => (
+              <div
+                key={`${partner.name}-${index}`}
+                className="flex items-center justify-center p-3 md:p-5 rounded-xl bg-white shadow-[0_1px_4px_rgba(0,0,0,0.06)] shrink-0 w-[140px] md:w-[180px] h-[90px] md:h-[110px] hover:shadow-[0_6px_20px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-all duration-300 group cursor-pointer"
+              >
+                <img
+                  src={partner.src}
+                  alt={partner.name}
+                  className="w-full h-full max-w-[110px] md:max-w-[140px] object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 mix-blend-multiply"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
