@@ -1,26 +1,20 @@
 import { motion } from "framer-motion";
 import { ShieldCheck, Landmark, Handshake, ArrowUpRight } from "lucide-react";
-import service01 from "@/assets/service-01.jpg";
-import service02 from "@/assets/service-02.jpg";
-import service03 from "@/assets/service-03.jpg";
 
 const benefits = [
   { 
     icon: ShieldCheck, 
     title: "Tu Auto", 
-    image: service01,
     description: "Terceros, todo riesgo o franquicia. Te explico la diferencia real y te ayudo a elegir sin pagar de más." 
   },
   { 
     icon: Landmark, 
     title: "Tu Casa", 
-    image: service02,
     description: "Incendio, robo, daños por agua, asistencia 24 hs. Tu hogar protegido para que puedas dormir tranquilo." 
   },
   { 
     icon: Handshake, 
     title: "Tu Empresa", 
-    image: service03,
     description: "ART sin vueltas. Optimizamos costos, mejoramos prestaciones y te acompañamos en cada caso." 
   },
 ];

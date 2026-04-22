@@ -15,6 +15,8 @@ import cnpLogo from "@/assets/cnp.jpeg";
 import assistanceLogo from "@/assets/assistance.jpeg";
 import liderarLogo from "@/assets/liderar.jpeg";
 import lifeLogo from "@/assets/life.jpeg";
+import interLogo from "@/assets/inter.jpeg";
+import retiroLogo from "@/assets/retiro.jpeg";
 
 const partners = [
   { name: "Libra Seguros", src: libraLogo },
@@ -33,6 +35,8 @@ const partners = [
   { name: "Omint Assistance", src: assistanceLogo },
   { name: "Liderar", src: liderarLogo },
   { name: "Life Seguros", src: lifeLogo },
+  { name: "Inter", src: interLogo },
+  { name: "Retiro", src: retiroLogo },
 ];
 
 const PartnersSection = () => {
