@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroImage from "@/assets/hero-family.jpg";
+import heroImage from "@/assets/hero-family.webp";
 import bgTexture from "@/assets/background1.png";
 
 const WHATSAPP_URL = "https://wa.me/5493875043079";

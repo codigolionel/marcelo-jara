@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <a href="#inicio" className="transition-opacity hover:opacity-80 flex items-center">
             <img
-              src="/logo-marcelo1.png"
+              src="/logo-marcelo1.webp"
               alt="Marcelo Jara"
               className="h-[94px] w-auto object-contain border-0 outline-none opacity-80"
             />

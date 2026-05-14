@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
-import advisorPhoto from "@/assets/advisor-photo.jpg";
+import advisorPhoto from "@/assets/advisor-photo.webp";
 
 const WHATSAPP_URL = "https://wa.me/5493875043079";
 

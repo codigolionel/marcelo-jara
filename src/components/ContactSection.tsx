@@ -14,7 +14,7 @@ const ContactSection = () => {
   const contactInfo = [
     { icon: MapPin, label: "Ubicación", value: "Salta, Argentina" },
     { icon: Phone, label: "Teléfono", value: "+54 9 387 504-3079" },
-    { icon: Mail, label: "Email", value: "marcelo@jaraseguros.com.ar" },
+    { icon: Mail, label: "Email", value: "markakym@hotmail.com" },
     { icon: Clock, label: "Horario", value: "Lun a Vie, 9:00 a 18:00" },
   ];
 
